@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: "Slow Signal — a motion-led blog",
+	title: "スローシグナル — モーション編集ログ",
 	description:
-		"Slow Signal is a Slow Web blog built with Next.js and AnimateUI to explore motion-first editorial craft.",
+		"スローシグナルは、モーションで語る編集術を記録するスローウェブのブログです。",
 };
 
 export default function RootLayout({
@@ -25,7 +25,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html lang="ja">
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>

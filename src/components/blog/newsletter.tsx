@@ -25,36 +25,35 @@ export function Newsletter() {
 	}, [state]);
 
 	return (
-		<section className="rounded-3xl border border-border/60 bg-muted/30 p-8 shadow-inner">
+		<section className="rounded-3xl border border-emerald-400/30 bg-black/60 p-8 shadow-[inset_0_0_60px_rgba(6,31,19,0.6)]">
 			<div className="grid gap-6 md:grid-cols-[1.2fr_0.8fr] md:items-center">
 				<div className="space-y-3">
-					<p className="text-sm font-semibold uppercase tracking-tight text-primary">
-						Studio log
+					<p className="text-sm font-semibold tracking-tight text-emerald-300">
+						スタジオログ
 					</p>
-					<h2 className="text-3xl font-semibold tracking-tight">
-						A calmer newsletter
+					<h2 className="text-3xl font-semibold tracking-tight text-emerald-50">
+						静かなニュースレター
 					</h2>
-					<p className="text-muted-foreground">
-						Every Sunday we share storyboard drafts, motion experiments, and
-						annotated reading lists. No noise, just field notes.
+					<p className="text-emerald-200/80">
+						毎週日曜、未公開のストーリーボードやモーション実験、注釈付きの読書リストを一通だけ配信します。
 					</p>
 				</div>
 				<form action={formAction} className="flex flex-col gap-3 sm:flex-row">
 					<label className="sr-only" htmlFor="email">
-						Email address
+						メールアドレス
 					</label>
 					<input
 						id="email"
 						name="email"
 						type="email"
 						required
-						placeholder="you@journal.tld"
+						placeholder="あなた@example.com"
 						autoComplete="email"
-						className="flex-1 rounded-full border border-border/70 bg-background px-5 py-3 text-base shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
+						className="flex-1 rounded-full border border-emerald-400/40 bg-black/40 px-5 py-3 text-base text-emerald-50 shadow-inner focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
 					/>
 					<SubmitButton />
 				</form>
-				<p aria-live="polite" className="text-sm text-muted-foreground">
+				<p aria-live="polite" className="text-sm text-emerald-200/80">
 					{state?.status === "error" ? state.message : ""}
 				</p>
 			</div>
@@ -68,9 +67,9 @@ function SubmitButton() {
 		<button
 			type="submit"
 			disabled={pending}
-			className="rounded-full bg-foreground px-6 py-3 font-medium text-background shadow-lg shadow-foreground/20 transition disabled:opacity-70"
+			className="rounded-full bg-primary px-6 py-3 font-medium text-primary-foreground shadow-lg shadow-primary/40 transition disabled:opacity-70"
 		>
-			{pending ? "Sending..." : "Join"}
+			{pending ? "送信中..." : "登録する"}
 		</button>
 	);
 }

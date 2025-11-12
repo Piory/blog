@@ -18,29 +18,29 @@ export function PostCard({ post }: PostCardProps) {
 			<PreviewCardTrigger
 				href={`/${post.slug}`}
 				className={cn(
-					"group relative flex min-h-[260px] flex-col justify-between rounded-3xl border border-border/60 bg-gradient-to-br p-6 text-left shadow-lg transition hover:-translate-y-1",
+					"group relative flex min-h-[260px] flex-col justify-between rounded-3xl border border-emerald-500/40 bg-gradient-to-br p-6 text-left text-emerald-50 shadow-[0_25px_45px_-30px_rgba(8,64,36,0.9)] transition hover:-translate-y-1",
 					post.coverGradient,
 				)}
 			>
 				<div className="space-y-3">
-					<p className="text-sm font-semibold uppercase tracking-wide text-white/80">
+					<p className="text-sm font-semibold tracking-wide text-emerald-100/80">
 						{post.category}
 					</p>
-					<h3 className="text-2xl font-semibold leading-snug text-white">
+					<h3 className="text-2xl font-semibold leading-snug text-emerald-50">
 						{post.title}
 					</h3>
-					<p className="text-base text-white/90">{post.excerpt}</p>
+					<p className="text-base text-emerald-50/90">{post.excerpt}</p>
 				</div>
-				<div className="flex items-center justify-between pt-6 text-sm font-medium text-white/80">
+				<div className="flex items-center justify-between pt-6 text-sm font-medium text-emerald-100/80">
 					<span>{post.readingTime}</span>
 					<span className="flex items-center gap-2">
-						<span className="text-xs uppercase text-white/70">Saves</span>
+						<span className="text-xs text-emerald-200/80">保存</span>
 						{post.stats.saves.toLocaleString()}
 					</span>
 				</div>
 			</PreviewCardTrigger>
 			<PreviewCardPanel className="w-72 text-sm text-left">
-				<p className="text-xs uppercase text-muted-foreground">Highlights</p>
+				<p className="text-xs font-semibold text-emerald-300">概要</p>
 				<div className="mt-3 space-y-2 text-foreground">
 					<p className="font-semibold">{post.title}</p>
 					<p className="text-sm text-muted-foreground">{post.publishedAt}</p>

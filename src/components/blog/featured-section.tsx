@@ -14,15 +14,15 @@ export function FeaturedSection({ posts }: FeaturedSectionProps) {
 		<section className="space-y-6">
 			<div className="flex flex-wrap items-end justify-between gap-4">
 				<div>
-					<p className="text-sm font-semibold uppercase tracking-tight text-primary">
-						Featured research
+					<p className="text-sm font-semibold tracking-tight text-emerald-300">
+						注目リサーチ
 					</p>
-					<h2 className="text-3xl font-semibold tracking-tight">
-						Editor picks
+					<h2 className="text-3xl font-semibold tracking-tight text-emerald-50">
+						編集部のおすすめ
 					</h2>
 				</div>
-				<p className="text-sm text-muted-foreground">
-					Hover for story notes powered by AnimateUI preview cards.
+				<p className="text-sm text-emerald-200/70">
+					AnimateUIのプレビューカードにカーソルを合わせると、追加のストーリーノートが現れます。
 				</p>
 			</div>
 			<div className="grid gap-5 lg:grid-cols-[1.2fr_0.8fr]">
