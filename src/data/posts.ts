@@ -7,7 +7,7 @@ export type Post = {
 	publishedAt: string;
 	readingTime: string;
 	featured: boolean;
-	coverGradient: string;
+	accentClass: string;
 	author: {
 		name: string;
 		role: string;
@@ -30,7 +30,7 @@ export const posts: Post[] = [
 		publishedAt: "2025-10-18",
 		readingTime: "約8分",
 		featured: true,
-		coverGradient: "from-emerald-600/80 via-emerald-500/70 to-lime-400/50",
+		accentClass: "bg-[#0d2117]",
 		author: {
 			name: "Sana Ito",
 			role: "ナラティブシステムリード",
@@ -53,7 +53,7 @@ export const posts: Post[] = [
 		publishedAt: "2025-09-02",
 		readingTime: "約6分",
 		featured: true,
-		coverGradient: "from-emerald-700/80 via-green-600/70 to-green-400/60",
+		accentClass: "bg-[#0a1c13]",
 		author: {
 			name: "Noah Jenkins",
 			role: "客員エディター",
@@ -76,7 +76,7 @@ export const posts: Post[] = [
 		publishedAt: "2025-07-29",
 		readingTime: "約11分",
 		featured: true,
-		coverGradient: "from-green-700/80 via-emerald-500/70 to-lime-300/50",
+		accentClass: "bg-[#082015]",
 		author: {
 			name: "Lena Borodin",
 			role: "モーションディレクター",
@@ -99,7 +99,7 @@ export const posts: Post[] = [
 		publishedAt: "2025-06-10",
 		readingTime: "約9分",
 		featured: false,
-		coverGradient: "from-emerald-800/80 via-emerald-600/70 to-emerald-400/50",
+		accentClass: "bg-[#081a12]",
 		author: {
 			name: "Eva Dávila",
 			role: "コンテンツリサーチリード",
@@ -122,7 +122,7 @@ export const posts: Post[] = [
 		publishedAt: "2025-05-18",
 		readingTime: "約7分",
 		featured: false,
-		coverGradient: "from-emerald-900/80 via-emerald-700/70 to-emerald-500/60",
+		accentClass: "bg-[#071710]",
 		author: {
 			name: "Mori Takamatsu",
 			role: "デザインオプス",
@@ -145,7 +145,7 @@ export const posts: Post[] = [
 		publishedAt: "2025-04-02",
 		readingTime: "約10分",
 		featured: false,
-		coverGradient: "from-emerald-950/90 via-emerald-700/70 to-emerald-500/60",
+		accentClass: "bg-[#050e09]",
 		author: {
 			name: "Harmony Wells",
 			role: "エクスペリエンス分析",

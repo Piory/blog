@@ -18,10 +18,10 @@ type HeroProps = {
 
 export function Hero({ topics, angles }: HeroProps) {
 	return (
-		<section className="relative isolate overflow-hidden rounded-3xl border border-emerald-500/30 bg-gradient-to-b from-black/80 to-background/60 shadow-[0_20px_60px_-30px_rgba(6,64,37,0.9)]">
-			<div className="absolute inset-0 -z-10 opacity-80">
+		<section className="relative isolate overflow-hidden rounded-3xl border border-emerald-500/30 bg-[#050c08] shadow-[0_20px_60px_-30px_rgba(6,64,37,0.9)]">
+			<div className="absolute inset-0 -z-10 opacity-70">
 				<GradientBackground className="blur-3xl" />
-				<div className="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-background" />
+				<div className="absolute inset-0 bg-black/60" />
 			</div>
 			<div className="grid gap-10 px-6 py-16 md:grid-cols-[1.25fr_0.75fr] md:px-12 lg:px-16">
 				<div className="space-y-8">
@@ -30,10 +30,7 @@ export function Hero({ topics, angles }: HeroProps) {
 					</div>
 					<div className="space-y-6 text-balance">
 						<h1 className="text-4xl font-semibold leading-tight tracking-tight text-balance text-emerald-50 sm:text-5xl lg:text-6xl">
-							スローシグナルは、チームが
-							<span className="block bg-gradient-to-r from-emerald-200 via-lime-200 to-emerald-100 bg-clip-text text-transparent">
-								意味のあるモーションを編み出すプロセスを記録するブログです。
-							</span>
+							スローシグナルは、チームが意味のあるモーションを編み出すプロセスを記録するブログです。
 						</h1>
 						<div className="text-lg text-emerald-200/80">
 							編集者・デザイナー・エンジニアが、所作や儀式、計測の道具をどう整えて
@@ -68,7 +65,7 @@ export function Hero({ topics, angles }: HeroProps) {
 						<div className="text-emerald-200/70">毎週木曜更新</div>
 					</div>
 				</div>
-				<div className="relative rounded-2xl border border-emerald-400/40 bg-black/60 p-6 shadow-xl shadow-emerald-900/50 backdrop-blur">
+				<div className="relative rounded-2xl border border-emerald-400/40 bg-[#040b07] p-6 shadow-xl shadow-emerald-900/50">
 					<p className="text-sm font-semibold text-emerald-200/70">
 						編集の視点
 					</p>
@@ -77,7 +74,7 @@ export function Hero({ topics, angles }: HeroProps) {
 						duration={2200}
 						className="mt-6 space-y-4 text-3xl font-semibold"
 					>
-						<RotatingText className="rounded-2xl bg-gradient-to-r from-white/80 to-white/30 px-4 py-3 text-balance text-lg leading-tight text-background shadow-lg" />
+						<RotatingText className="rounded-2xl bg-[#04130c] px-4 py-3 text-balance text-lg leading-tight text-emerald-100 shadow-lg shadow-emerald-900/50" />
 					</RotatingTextContainer>
 					<div className="mt-10 grid gap-4 text-sm">
 						{topics.slice(0, 3).map((topic) => (

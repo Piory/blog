@@ -14,11 +14,10 @@ function GradientBackground({
 	return (
 		<motion.div
 			data-slot="gradient-background"
-			className={cn(
-				"size-full bg-gradient-to-br from-emerald-700 via-green-600 to-black bg-[length:400%_400%]",
-				className,
-			)}
-			animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
+			className={cn("size-full bg-[#04130c]", className)}
+			animate={{
+				backgroundColor: ["#04130c", "#031b11", "#04130c"],
+			}}
 			transition={transition}
 			{...props}
 		/>

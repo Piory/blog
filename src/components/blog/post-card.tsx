@@ -18,8 +18,8 @@ export function PostCard({ post }: PostCardProps) {
 			<PreviewCardTrigger
 				href={`/${post.slug}`}
 				className={cn(
-					"group relative flex min-h-[260px] flex-col justify-between rounded-3xl border border-emerald-500/40 bg-gradient-to-br p-6 text-left text-emerald-50 shadow-[0_25px_45px_-30px_rgba(8,64,36,0.9)] transition hover:-translate-y-1",
-					post.coverGradient,
+					"group relative flex min-h-[260px] flex-col justify-between rounded-3xl border border-emerald-500/40 p-6 text-left text-emerald-50 shadow-[0_25px_45px_-30px_rgba(8,64,36,0.9)] transition hover:-translate-y-1",
+					post.accentClass,
 				)}
 			>
 				<div className="space-y-3">
