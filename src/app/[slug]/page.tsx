@@ -102,7 +102,7 @@ export default async function PostDetailPage({ params }: PageProps) {
 						</div>
 					</section>
 
-					<section className="mx-auto max-w-3xl space-y-8 text-lg leading-relaxed text-emerald-100/80">
+					<section className="space-y-8 px-2 text-lg leading-relaxed text-emerald-100/80 sm:px-4">
 						{post.body.map((paragraph) => (
 							<p
 								key={`${post.slug}-${paragraph.slice(0, 24)}`}
